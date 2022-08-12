@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+  --bg-secondary-color: hsl(0, 0%, 100%);
+  --bg-main-color: hsl(212, 45%, 89%);
+  --fn-p: 15px;
+  --fn-p-color: hsl(220, 15%, 55%);
+  --fn-w400: 400;
+  --ff-primary: "Outfit", sans-serif;
+  --fn-title-color: hsl(218, 44%, 22%);
+}
+* {
+  font-family: var(--ff-primary);
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-main-color);
+  height: 100vh;
+}
+.container-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center;
+  padding: 10px 10px 50px 10px;
+  border-radius: 15px;
+  background-color: var(--bg-secondary-color);
+  width: 300px;
+  -webkit-box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.57);
+}
+.container-information img {
+  object-fit: contain;
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
+}
+.container-information p {
+  font-size: var(--fn-p);
+  color: var(--fn-p-color);
+  font-weight: var(--fn-w400);
+}
+.container-information h2 {
+  color: var(--fn-title-color);
+  padding: 0px 15px;
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
